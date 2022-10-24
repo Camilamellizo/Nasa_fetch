@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="pokemon.js"></script>
+    <link href="output.css" rel="stylesheet">
+    <title>pokemon</title>
+  
+</head>
+<body>
+    <div class="container mx-auto py-8 font-mono ">
+
+        <h1 class="text-4xl flex justify-center mb-8">Quién es ese pokemon?</h1>
+
+        <!-- <form class="grid justify-center py-8">
+            <div class="my-8">
+                <label>Pulsa el boton para descubir una pokemon al azar: </label>
+            </div>
+            <div class="grid justify-center">
+                <button type="button" onclick="ramdompokemon()" class="border-solid border border-gray-600  px-4 rounded bg-blue-100">Ramdom</button>
+            </div>
+        </form> -->
+
+        <label for="pokemon" class="text-2xl">Escoje un pokemon</label>
+        <select  id="pokemon" class="border-2 border-solid">
+        <option value="__">---</option>
+        <option value="limber" id="limber">limber</option>
+        <option value="imposter" id="imposter">imposter</option>
+        </select>
+    
+        <div id="pokemon" class="flex flex-wrap">
+        </div>
+    </div>
+</body>
+</html>

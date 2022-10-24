@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="nasa.js"></script>
+    <link href="output.css" rel="stylesheet">
+    <title>fecht</title>
+    <style>
+        #personas{
+           display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-gray-900 via-purple-500 to-pink-300 font-mono text-white ">
+    <div class="container mx-auto py-8">
+        <h1 class="text-4xl flex justify-center">Nasa</h1>
+        <h1 class="text-3xl flex justify-center">Que paso en el universo en esta fecha?</h1>
+
+      
+            <form class="m-8  p-8 grid justify-items-center ">
+                <div>
+                    <label> Dia:</label>
+                    <input id="dia" type="text" class="w-24 mr-4 text-black">
+
+                    <label> mes:</label>
+                    <input id="mes" type="text"  class="w-24 mr-4 text-black">
+
+                    <label> año:</label>
+                    <input id="año" type="text"  class="w-24 mr-4 text-black">
+                </div>
+                <div class="mt-8 w-24 border border-gray-600 bg-blue-500 hover:bg-purple-900  grid justify-items-center ">
+                    <button type="button" onclick="fotodeldia()">Buscar</button>
+                </div>
+            </form>
+
+            
+            <div id="fotos" class="flex flex-wrap  p-8 m-20 ">
+
+            </div>
+           
+
+        
+    </div>
+
+  
+    
+</body>
+</html>
